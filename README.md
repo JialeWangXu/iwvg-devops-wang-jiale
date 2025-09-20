@@ -12,7 +12,7 @@
 ### Estado del código
 [![CI](https://github.com/JialeWangXu/iwvg-devops-wang-jiale/actions/workflows/continuous-integration.yml/badge.svg?branch=develop)](https://github.com/JialeWangXu/iwvg-devops-wang-jiale/actions/workflows/continuous-integration.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jialewangxu_iwvg-devops-wang-jiale&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jialewangxu_iwvg-devops-wang-jiale)
-[![Render broken](https://iwvg-devops-latest.onrender.com/version-badge)](https://iwvg-devops-latest.onrender.com/swagger-ui.html)
+[![Render broken](https://iwvg-devops-wang-jiale-latest.onrender.com/version-badge)](https://iwvg-devops-latest.onrender.com/swagger-ui.html)
 
 
 ### Tecnologías necesarias
