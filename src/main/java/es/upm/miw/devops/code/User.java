@@ -51,7 +51,7 @@ public class User {
         return "User{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
-                ", familyName='" + familyName +
+                ", familyName='" + familyName + '\'' +
                 '}';
     }
 }
