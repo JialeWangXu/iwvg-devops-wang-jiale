@@ -83,4 +83,17 @@ class SearchTest {
         assertTrue(result.contains(Double.POSITIVE_INFINITY));
     }
 
+    //Test for 8
+    @Test
+    void testFindUserFamilyNameBySomeImproperFraction(){
+        List<String> result = search.findUserFamilyNameBySomeImproperFraction().toList();
+
+        assertEquals(5,result.size());
+        assertTrue(result.contains("Fernandez"));
+        assertTrue(result.contains("Blanco"));
+        assertTrue(result.contains("López"));
+        assertTrue(result.contains("Torres"));
+        assertEquals(2, result.stream().filter(x -> x.equals("Blanco")).count());
+    }
+
 }
