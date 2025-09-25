@@ -46,7 +46,7 @@ class SearchTest {
 
     //Test for 6
     @Test
-    void testFindDecimalImproperFractionByUserNameFernandez(){
+    void testFindDecimalImproperFractionByUserNameOscar(){
         List<Double> result = search.findDecimalImproperFractionByUserName("Oscar").toList();
         assertEquals(2, result.size());
         assertTrue(result.contains(2.0));
@@ -57,6 +57,29 @@ class SearchTest {
     void testFindDecimalImproperFractionByUserNamePaula(){
         List<Double> result = search.findDecimalImproperFractionByUserName("Paula").toList();
         assertEquals(1, result.size());
+        assertTrue(result.contains(Double.POSITIVE_INFINITY));
+    }
+
+    //Test for c
+    @Test
+    void testFindDecimalFractionByUserNameOscar(){
+        List<Double> result = search.findDecimalFractionByUserName("Oscar").toList();
+        assertEquals(7, result.size());
+        assertTrue(result.contains(0.0));
+        assertTrue(result.contains(1.0));
+        assertTrue(result.contains(2.0));
+
+        assertTrue(result.contains(0.2));
+        assertTrue(result.contains(-0.5));
+        assertTrue(result.contains(0.5));
+        assertTrue(result.contains(1.0));
+    }
+
+    @Test
+    void testFindDecimalFractionByUserNamePaula(){
+        List<Double> result = search.findDecimalFractionByUserName("Paula").toList();
+        assertEquals(5, result.size());
+        assertTrue(result.contains(1.0));
         assertTrue(result.contains(Double.POSITIVE_INFINITY));
     }
 
