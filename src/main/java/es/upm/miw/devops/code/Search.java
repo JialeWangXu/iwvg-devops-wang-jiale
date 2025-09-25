@@ -13,7 +13,6 @@ public class Search {
                 .orElse(null);
     }
 
-
     public Stream<Double> findDecimalImproperFractionByUserName(String name){
         return new UsersDatabase().findAll()
                 .filter(x -> x.getName().equals(name))
