@@ -2,9 +2,11 @@ package es.upm.miw.devops.code;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-public class SearchTest {
+class SearchTest {
 
     Search search;
 
@@ -40,6 +42,22 @@ public class SearchTest {
         Fraction result =search.findFractionMultiplicationByUserFamilyName("Fernandez");
         assertEquals( 0, result.getNumerator());
         assertEquals(1, result.getDenominator());
+    }
+
+    //Test for 6
+    @Test
+    void testFindDecimalImproperFractionByUserNameFernandez(){
+        List<Double> result = search.findDecimalImproperFractionByUserName("Oscar").toList();
+        assertEquals(2, result.size());
+        assertTrue(result.contains(2.0));
+        assertTrue(result.contains(-0.5));
+    }
+
+    @Test
+    void testFindDecimalImproperFractionByUserNamePaula(){
+        List<Double> result = search.findDecimalImproperFractionByUserName("Paula").toList();
+        assertEquals(1, result.size());
+        assertTrue(result.contains(Double.POSITIVE_INFINITY));
     }
 
 }
