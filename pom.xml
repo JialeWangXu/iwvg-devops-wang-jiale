@@ -14,7 +14,7 @@
 
     <groupId>es.upm.miw</groupId>
     <artifactId>iwvg-devops-wang-jiale</artifactId>
-    <version>5.2.0-release</version>
+    <version>5.2.1-release</version>
     <packaging>jar</packaging>
     <name>${project.groupId}.${project.artifactId}</name>
     <url>http://github.com/miw-upm/${project.artifactId}</url>
