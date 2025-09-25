@@ -7,9 +7,18 @@ public class Search {
 
     public Fraction findFractionMultiplicationByUserFamilyName(String familyName){
         return new UsersDatabase().findAll()
-                .filter(x->x.getFamilyName()==familyName)
+                .filter(x->x.getFamilyName().equals(familyName))
                 .flatMap(user -> user.getFractions().stream().filter(Objects::nonNull))
                 .reduce(Fraction::multiply)
                 .orElse(null);
+    }
+
+
+    public Stream<Double> findDecimalImproperFractionByUserName(String name){
+        return new UsersDatabase().findAll()
+                .filter(x -> x.getName().equals(name))
+                .flatMap(user -> user.getFractions().stream().filter(Objects::nonNull))
+                .filter(f -> f.isImproper())
+                .map(f -> f.decimal());
     }
 }
