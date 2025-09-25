@@ -131,5 +131,11 @@ Issues**) por cada búsqueda, con el test correspondiente (**3.5 ptos**).
 Indicar como texto en la subida la **URL de GitHub**
 > **NOTA. Acordarse de dar al botón de envío**
 
-Ejemplo resuelto:
+### Resultado del Git Graph:
+
+<img width="991" height="786" alt="image" src="https://github.com/user-attachments/assets/0546311f-d808-4c8a-a05f-0da32c7a5568" />
+
+<img width="992" height="484" alt="image" src="https://github.com/user-attachments/assets/c7689e82-8a8a-415e-9ca4-fa4a70089b8d" />
+
+
 ![](./docs/miw-iwvg-devops-demo.png)
